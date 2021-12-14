@@ -1,0 +1,16 @@
+<main>
+  <div class="page-container">
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link *ngFor="let link of links"
+         (click)="goToTask(link)"
+         [active]="activeLink == link"> {{link.name}} </a>
+    </nav>
+    <div class="tab-container">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</main>
+
+
+

@@ -9,6 +9,8 @@ import { FirstTabComponent } from './tabs/first-tab/first-tab.component';
 import { MainComponent } from './tabs/main/main.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
+import {FormsModule} from "@angular/forms";
 
 const routes: Routes = [
   {
@@ -48,14 +50,16 @@ const routes: Routes = [
     AppComponent,
     FirstTabComponent,
     MainComponent,
-    StartPageComponent
+    StartPageComponent,
+    ToggleButtonComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule
 
   ],
   providers: [],

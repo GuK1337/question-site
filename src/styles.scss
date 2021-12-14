@@ -23,15 +23,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-size: 1.2rem;
 }
 
-.question-example button, .question-answer button{
-  vertical-align: middle;
-  width: fit-content;
-  height: fit-content;
-  padding: 0.3rem 0.5rem;
-  line-height: normal;
-  min-width: auto;
-}
-
 .question-container{
   padding-left: 50px;
 }
@@ -40,7 +31,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .question-number{
   position: absolute;
@@ -55,4 +46,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   align-items: center;
   border-radius: 50%;
 }
-
+.question-answer{
+  &__text:not(:last-child){
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}

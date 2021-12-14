@@ -1,0 +1,31 @@
+<div class="question-container">
+  <div class="question">
+    <div class="question-number">
+      1
+    </div>
+    <div class="question-title">
+      Давайте вместе выберем правильную форму глагола does.
+    </div>
+    <div class="question-example">
+      Example: <app-toggle-button [values]="firstQu" [value]="'Does'" [disabled]="true"></app-toggle-button> she buy bows?
+    </div>
+    <div class="question-answer">
+      <div class="question-answer__text question-answer__text_1">
+        1. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[0]"></app-toggle-button> he have stockings on the wall?
+      </div>
+      <div class="question-answer__text question-answer__text_2">
+        2. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[1]"></app-toggle-button> they like presents under the Christmas tree?
+      </div>
+      <div class="question-answer__text question-answer__text_3">
+        3. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[2]"></app-toggle-button> you have bows on your Christmas tree?
+      </div>
+      <div class="question-answer__text question-answer__text_4">
+        4. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[3]"></app-toggle-button> it often snowing in winter?
+      </div>
+      <div class="question-answer__text question-answer__text_5">
+        5. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[4]"></app-toggle-button> Santa Claus has 13 reindeers?
+      </div>
+    </div>
+
+  </div>
+</div>
