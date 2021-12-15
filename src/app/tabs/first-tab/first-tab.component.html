@@ -7,23 +7,162 @@
       Давайте вместе выберем правильную форму глагола does.
     </div>
     <div class="question-example">
-      Example: <app-toggle-button [values]="firstQu" [value]="'Does'" [disabled]="true"></app-toggle-button> she buy bows?
+      <div class="question-answer__select">
+        Example: <app-toggle-button [values]="firstQu" [value]="'Does'" [disabled]="true"></app-toggle-button> she buy bows?
+      </div>
     </div>
     <div class="question-answer">
-      <div class="question-answer__text question-answer__text_1">
-        1. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[0]"></app-toggle-button> he have stockings on the wall?
+      <div class="question-answer__select ">
+        <div>1.	Does his Christmas tree beautiful?</div>1
       </div>
-      <div class="question-answer__text question-answer__text_2">
+      <div class="question-answer__select ">
         2. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[1]"></app-toggle-button> they like presents under the Christmas tree?
       </div>
-      <div class="question-answer__text question-answer__text_3">
+      <div class="question-answer__select ">
         3. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[2]"></app-toggle-button> you have bows on your Christmas tree?
       </div>
-      <div class="question-answer__text question-answer__text_4">
+      <div class="question-answer__select ">
         4. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[3]"></app-toggle-button> it often snowing in winter?
       </div>
-      <div class="question-answer__text question-answer__text_5">
+      <div class="question-answer__select ">
         5. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[4]"></app-toggle-button> Santa Claus has 13 reindeers?
+      </div>
+    </div>
+
+  </div>
+  <mat-divider></mat-divider>
+  <div class="question">
+    <div class="question-number">
+      2
+    </div>
+    <div class="question-title">
+      Кто-то перепутал все слова в предложении. Давайте поможем Санте собрать их правильно!
+    </div>
+    <div class="question-example">
+      <div>
+        Example: His Christmas tree is very beautiful!
+      </div>
+      <div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput value="Does she buy all presents for Christmas?" readonly>
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="question-answer">
+      <div class="question-answer__form-sentence ">
+        <app-select-words></app-select-words>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          2.	Jane doesn’t like snow.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          3.	Scott doesn’t have presents under the Christmas tree.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          4.	Kim doesn’t have stockings near the fireplace.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          5.	Kim doesn’t have stockings near the fireplace.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          6.	They see reindeers in the mall.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+    </div>
+
+  </div>
+  <mat-divider></mat-divider>
+  <div class="question">
+    <div class="question-number">
+      3
+    </div>
+    <div class="question-title">
+      Давайте вместе выберем правильную форму глагола does.
+    </div>
+    <div class="question-example">
+      <div>
+        Example: His Christmas tree is very beautiful!
+      </div>
+      <div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput value="Does she buy all presents for Christmas?" readonly>
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="question-answer">
+      <div class="question-answer__form-sentence ">
+       <div>
+         1.	Does his Christmas tree beautiful?
+       </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          2.	Jane doesn’t like snow.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          3.	Scott doesn’t have presents under the Christmas tree.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          4.	Kim doesn’t have stockings near the fireplace.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          5.	Kim doesn’t have stockings near the fireplace.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
+      </div>
+      <div class="question-answer__form-sentence ">
+        <div>
+          6.	They see reindeers in the mall.
+        </div>
+        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+          <input matInput placeholder="Enter a sentence">
+        </mat-form-field>
       </div>
     </div>
 

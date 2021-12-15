@@ -1,3 +1,23 @@
 :host{
-
+  .question-example-text{
+    margin-bottom: 20px;
+  }
+  ::ng-deep{
+    .answer-input{
+      width: 70%;
+      .mat-form-field-wrapper{
+        padding: 0;
+        .mat-form-field-flex{
+          padding-top: 0;
+          .mat-form-field-infix{
+            border: 0;
+            padding-top: 0.75rem;
+          }
+        }
+        .mat-form-field-underline{
+          bottom: 0;
+        }
+      }
+    }
+  }
 }

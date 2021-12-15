@@ -11,6 +11,12 @@ import { StartPageComponent } from './start-page/start-page.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
 import {FormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatIconModule} from "@angular/material/icon";
+import {DragDropModule} from "@angular/cdk/drag-drop";
+import { SelectWordsComponent } from './components/select-words/select-words.component';
 
 const routes: Routes = [
   {
@@ -52,6 +58,7 @@ const routes: Routes = [
     MainComponent,
     StartPageComponent,
     ToggleButtonComponent,
+    SelectWordsComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -59,7 +66,12 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatButtonModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDividerModule,
+    MatIconModule,
+    DragDropModule
 
   ],
   providers: [],

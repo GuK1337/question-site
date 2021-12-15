@@ -14,6 +14,8 @@ export class FirstTabComponent implements OnInit {
 
   public firstAnsw: string[] = Array<string>(5);
 
+  public value: string = '';
+
   public correctfirstAnsw:string[] = [
     'Does',
     'Do',
