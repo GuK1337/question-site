@@ -17,6 +17,9 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatIconModule} from "@angular/material/icon";
 import {DragDropModule} from "@angular/cdk/drag-drop";
 import { SelectWordsComponent } from './components/select-words/select-words.component';
+import {CorrectAnswerService} from "./services/correct-answer.service";
+import { SelectImageComponent } from './components/select-image/select-image.component';
+import { SecondTabComponent } from './tabs/second-tab/second-tab.component';
 
 const routes: Routes = [
   {
@@ -40,6 +43,10 @@ const routes: Routes = [
       {
         path: 'grammar',
         component: FirstTabComponent
+      },
+      {
+        path: 'wordstock',
+        component: SecondTabComponent
       }
     ]
   },
@@ -59,6 +66,8 @@ const routes: Routes = [
     StartPageComponent,
     ToggleButtonComponent,
     SelectWordsComponent,
+    SelectImageComponent,
+    SecondTabComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -74,7 +83,9 @@ const routes: Routes = [
     DragDropModule
 
   ],
-  providers: [],
+  providers: [
+    CorrectAnswerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

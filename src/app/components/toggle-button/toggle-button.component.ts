@@ -17,6 +17,7 @@ export class ToggleButtonComponent implements ControlValueAccessor {
 
   @Input() values!: [string, string];
   @Input() disabled: boolean = false;
+  @Input() correct!: string | null;
 
   private _value:any;
 

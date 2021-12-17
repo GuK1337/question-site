@@ -3,7 +3,7 @@
     <nav mat-tab-nav-bar>
       <a mat-tab-link *ngFor="let link of links"
          (click)="goToTask(link)"
-         [active]="activeLink == link"> {{link.name}} </a>
+         [active]="activeLink == link"> {{link.name}} <mat-icon *ngIf="correct.includes(link.path)" style="color: green; margin-left: 0.5rem" aria-hidden="false" aria-label="success icon">check_circle</mat-icon></a>
     </nav>
     <div class="tab-container">
       <router-outlet></router-outlet>

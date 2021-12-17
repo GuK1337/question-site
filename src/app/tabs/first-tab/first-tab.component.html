@@ -13,19 +13,19 @@
     </div>
     <div class="question-answer">
       <div class="question-answer__select ">
-        <div>1.	Does his Christmas tree beautiful?</div>1
+        1. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[0]" [correct]="firstAnswCorrect ? firstAnswCorrect[0] : null"></app-toggle-button> he have stockings on the wall?
       </div>
       <div class="question-answer__select ">
-        2. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[1]"></app-toggle-button> they like presents under the Christmas tree?
+        2. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[1]" [correct]="firstAnswCorrect ? firstAnswCorrect[1] : null"></app-toggle-button> they like presents under the Christmas tree?
       </div>
       <div class="question-answer__select ">
-        3. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[2]"></app-toggle-button> you have bows on your Christmas tree?
+        3. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[2]" [correct]="firstAnswCorrect ? firstAnswCorrect[2] : null" ></app-toggle-button> you have bows on your Christmas tree?
       </div>
       <div class="question-answer__select ">
-        4. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[3]"></app-toggle-button> it often snowing in winter?
+        4. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[3]" [correct]="firstAnswCorrect ? firstAnswCorrect[3] : null"></app-toggle-button> it often snowing in winter?
       </div>
       <div class="question-answer__select ">
-        5. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[4]"></app-toggle-button> Santa Claus has 13 reindeers?
+        5. <app-toggle-button [values]="firstQu" [(ngModel)]="firstAnsw[4]" [correct]="firstAnswCorrect ? firstAnswCorrect[4] : null"></app-toggle-button> Santa Claus has 13 reindeers?
       </div>
     </div>
 
@@ -40,58 +40,18 @@
     </div>
     <div class="question-example">
       <div>
-        Example: His Christmas tree is very beautiful!
+        Example:
       </div>
       <div>
-        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
-          <input matInput value="Does she buy all presents for Christmas?" readonly>
-        </mat-form-field>
+        <div>
+          <app-select-words [wordsList]="[]" [selectedWordsList]="['Does', 'she', 'buy', 'all', 'presents', 'for', 'Christmas?']" [disabled]="true" class="words-list"></app-select-words>
+        </div>
       </div>
 
     </div>
     <div class="question-answer">
-      <div class="question-answer__form-sentence ">
-        <app-select-words></app-select-words>
-      </div>
-      <div class="question-answer__form-sentence ">
-        <div>
-          2.	Jane doesn’t like snow.
-        </div>
-        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
-          <input matInput placeholder="Enter a sentence">
-        </mat-form-field>
-      </div>
-      <div class="question-answer__form-sentence ">
-        <div>
-          3.	Scott doesn’t have presents under the Christmas tree.
-        </div>
-        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
-          <input matInput placeholder="Enter a sentence">
-        </mat-form-field>
-      </div>
-      <div class="question-answer__form-sentence ">
-        <div>
-          4.	Kim doesn’t have stockings near the fireplace.
-        </div>
-        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
-          <input matInput placeholder="Enter a sentence">
-        </mat-form-field>
-      </div>
-      <div class="question-answer__form-sentence ">
-        <div>
-          5.	Kim doesn’t have stockings near the fireplace.
-        </div>
-        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
-          <input matInput placeholder="Enter a sentence">
-        </mat-form-field>
-      </div>
-      <div class="question-answer__form-sentence ">
-        <div>
-          6.	They see reindeers in the mall.
-        </div>
-        <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
-          <input matInput placeholder="Enter a sentence">
-        </mat-form-field>
+      <div class="question-answer__form-drag-and-drop" *ngFor="let list of secondSent; index as i;">
+        {{i+1}}. <app-select-words [wordsList]="list" class="words-list"></app-select-words>
       </div>
     </div>
 
@@ -165,6 +125,6 @@
         </mat-form-field>
       </div>
     </div>
-
+    <button mat-raised-button color="primary" class="submit-btn" (click)="submit()">Проверить ответы</button>
   </div>
 </div>

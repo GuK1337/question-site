@@ -1,0 +1,154 @@
+<div cdkDropListGroup>
+  <div class="image-container">
+    <div class="image-block">
+      <div class="image-block__top">
+        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+      </div>
+
+      <div
+        class="example-container"
+        [class.correct]="correct != null && selectedWordsList.join(' ') === correct"
+        [class.uncorrect]="correct != null && selectedWordsList.join(' ') !== correct">
+        <div
+          #selectedWords="cdkDropList"
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          [cdkDropListData]="selectedWordsList"
+          [cdkDropListConnectedTo]="unselectedWords"
+          [cdkDropListDisabled]="disabled"
+          [style]="disabled ? 'margin-bottom: 0;' : ''"
+          class="word-list list-selected"
+          (cdkDropListDropped)="drop($event)">
+          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <div class="image-block__top">
+        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+      </div>
+
+      <div
+        class="example-container"
+        [class.correct]="correct != null && selectedWordsList.join(' ') === correct"
+        [class.uncorrect]="correct != null && selectedWordsList.join(' ') !== correct">
+        <div
+          #selectedWords="cdkDropList"
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          [cdkDropListData]="selectedWordsList"
+          [cdkDropListConnectedTo]="unselectedWords"
+          [cdkDropListDisabled]="disabled"
+          [style]="disabled ? 'margin-bottom: 0;' : ''"
+          class="word-list list-selected"
+          (cdkDropListDropped)="drop($event)">
+          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <div class="image-block__top">
+        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+      </div>
+
+      <div
+        class="example-container"
+        [class.correct]="correct != null && selectedWordsList.join(' ') === correct"
+        [class.uncorrect]="correct != null && selectedWordsList.join(' ') !== correct">
+        <div
+          #selectedWords="cdkDropList"
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          [cdkDropListData]="selectedWordsList"
+          [cdkDropListConnectedTo]="unselectedWords"
+          [cdkDropListDisabled]="disabled"
+          [style]="disabled ? 'margin-bottom: 0;' : ''"
+          class="word-list list-selected"
+          (cdkDropListDropped)="drop($event)">
+          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <div class="image-block__top">
+        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+      </div>
+
+      <div
+        class="example-container"
+        [class.correct]="correct != null && selectedWordsList.join(' ') === correct"
+        [class.uncorrect]="correct != null && selectedWordsList.join(' ') !== correct">
+        <div
+          #selectedWords="cdkDropList"
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          [cdkDropListData]="selectedWordsList"
+          [cdkDropListConnectedTo]="unselectedWords"
+          [cdkDropListDisabled]="disabled"
+          [style]="disabled ? 'margin-bottom: 0;' : ''"
+          class="word-list list-selected"
+          (cdkDropListDropped)="drop($event)">
+          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <div class="image-block__top">
+        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+      </div>
+
+      <div
+        class="example-container"
+        [class.correct]="correct != null && selectedWordsList.join(' ') === correct"
+        [class.uncorrect]="correct != null && selectedWordsList.join(' ') !== correct">
+        <div
+          #selectedWords="cdkDropList"
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          [cdkDropListData]="selectedWordsList"
+          [cdkDropListConnectedTo]="unselectedWords"
+          [cdkDropListDisabled]="disabled"
+          [style]="disabled ? 'margin-bottom: 0;' : ''"
+          class="word-list list-selected"
+          (cdkDropListDropped)="drop($event)">
+          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <div class="image-block__top">
+        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+      </div>
+
+      <div
+        class="example-container"
+        [class.correct]="correct != null && selectedWordsList.join(' ') === correct"
+        [class.uncorrect]="correct != null && selectedWordsList.join(' ') !== correct">
+        <div
+          #selectedWords="cdkDropList"
+          cdkDropList
+          cdkDropListOrientation="horizontal"
+          [cdkDropListData]="selectedWordsList"
+          [cdkDropListConnectedTo]="unselectedWords"
+          [cdkDropListDisabled]="disabled"
+          [style]="disabled ? 'margin-bottom: 0;' : ''"
+          class="word-list list-selected"
+          (cdkDropListDropped)="drop($event)">
+          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="example-container" [style.display]="disabled ? 'none': 'block'">
+    <div
+      #unselectedWords="cdkDropList"
+      cdkDropList
+      cdkDropListOrientation="horizontal"
+      [cdkDropListData]="wordsList"
+      [cdkDropListConnectedTo]="selectedWords"
+      class="word-list list-unselected"
+      (cdkDropListDropped)="drop($event)">
+      <div class="word-box" *ngFor="let item of wordsList" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+</div>
