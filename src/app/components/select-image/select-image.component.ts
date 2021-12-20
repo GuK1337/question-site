@@ -8,7 +8,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from "@angular/cdk/drag
 })
 export class SelectImageComponent implements OnInit {
   @Input() wordsList: string[] = [];
-  @Input() selectedWordsList: string[] = [];
+  selectedWordsList!: string[][];
   @Input() disabled: boolean = false;
   @Input() correct!: string | null;
 
@@ -16,21 +16,38 @@ export class SelectImageComponent implements OnInit {
 
   ngOnInit(): void {
     this.wordsList = this.shuffle(this.wordsList);
+    this.selectedWordsList = [[],[],[],[],[],[],[],];
   }
 
-  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
-
-  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
   drop(event: CdkDragDrop<string[]>) {
+
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
-      transferArrayItem(
-        event.previousContainer.data,
-        event.container.data,
-        event.previousIndex,
-        event.currentIndex,
-      );
+      if(this.selectedWordsList.includes(event.container.data) && event.container.data.length > 0) {
+        const oldItem = event.container.data[0];
+        transferArrayItem(
+          event.previousContainer.data,
+          event.container.data,
+          event.previousIndex,
+          event.currentIndex,
+        );
+        transferArrayItem(
+          event.container.data,
+          event.previousContainer.data,
+          event.container.data.findIndex(el => el === oldItem),
+          event.previousContainer.data.length,
+        );
+
+      }
+        else{
+        transferArrayItem(
+          event.previousContainer.data,
+          event.container.data,
+          event.previousIndex,
+          event.currentIndex,
+        );
+      }
     }
   }
 

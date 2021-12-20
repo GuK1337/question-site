@@ -13,19 +13,19 @@
           #selectedWords="cdkDropList"
           cdkDropList
           cdkDropListOrientation="horizontal"
-          [cdkDropListData]="selectedWordsList"
+          [cdkDropListData]="selectedWordsList[0]"
           [cdkDropListConnectedTo]="unselectedWords"
           [cdkDropListDisabled]="disabled"
           [style]="disabled ? 'margin-bottom: 0;' : ''"
           class="word-list list-selected"
           (cdkDropListDropped)="drop($event)">
-          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+          <div class="word-box" *ngFor="let item of selectedWordsList[0]" cdkDrag><div class="item">{{item}}</div></div>
         </div>
       </div>
     </div>
     <div class="image-block">
       <div class="image-block__top">
-        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+        <img src="assets/img/img2.png" alt="image" style="width: 100%" class="image-block__img">
       </div>
 
       <div
@@ -36,19 +36,19 @@
           #selectedWords="cdkDropList"
           cdkDropList
           cdkDropListOrientation="horizontal"
-          [cdkDropListData]="selectedWordsList"
+          [cdkDropListData]="selectedWordsList[1]"
           [cdkDropListConnectedTo]="unselectedWords"
           [cdkDropListDisabled]="disabled"
           [style]="disabled ? 'margin-bottom: 0;' : ''"
           class="word-list list-selected"
           (cdkDropListDropped)="drop($event)">
-          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+          <div class="word-box" *ngFor="let item of selectedWordsList[1]" cdkDrag><div class="item">{{item}}</div></div>
         </div>
       </div>
     </div>
     <div class="image-block">
       <div class="image-block__top">
-        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+        <img src="assets/img/img3.png" alt="image" style="width: 100%" class="image-block__img">
       </div>
 
       <div
@@ -59,19 +59,19 @@
           #selectedWords="cdkDropList"
           cdkDropList
           cdkDropListOrientation="horizontal"
-          [cdkDropListData]="selectedWordsList"
+          [cdkDropListData]="selectedWordsList[2]"
           [cdkDropListConnectedTo]="unselectedWords"
           [cdkDropListDisabled]="disabled"
           [style]="disabled ? 'margin-bottom: 0;' : ''"
           class="word-list list-selected"
           (cdkDropListDropped)="drop($event)">
-          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+          <div class="word-box" *ngFor="let item of selectedWordsList[2]" cdkDrag><div class="item">{{item}}</div></div>
         </div>
       </div>
     </div>
     <div class="image-block">
       <div class="image-block__top">
-        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+        <img src="assets/img/img4.png" alt="image" style="width: 100%" class="image-block__img">
       </div>
 
       <div
@@ -82,19 +82,19 @@
           #selectedWords="cdkDropList"
           cdkDropList
           cdkDropListOrientation="horizontal"
-          [cdkDropListData]="selectedWordsList"
+          [cdkDropListData]="selectedWordsList[3]"
           [cdkDropListConnectedTo]="unselectedWords"
           [cdkDropListDisabled]="disabled"
           [style]="disabled ? 'margin-bottom: 0;' : ''"
           class="word-list list-selected"
           (cdkDropListDropped)="drop($event)">
-          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+          <div class="word-box" *ngFor="let item of selectedWordsList[3]" cdkDrag><div class="item">{{item}}</div></div>
         </div>
       </div>
     </div>
     <div class="image-block">
       <div class="image-block__top">
-        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+        <img src="assets/img/img5.png" alt="image" style="width: 100%" class="image-block__img">
       </div>
 
       <div
@@ -105,19 +105,19 @@
           #selectedWords="cdkDropList"
           cdkDropList
           cdkDropListOrientation="horizontal"
-          [cdkDropListData]="selectedWordsList"
+          [cdkDropListData]="selectedWordsList[4]"
           [cdkDropListConnectedTo]="unselectedWords"
           [cdkDropListDisabled]="disabled"
           [style]="disabled ? 'margin-bottom: 0;' : ''"
           class="word-list list-selected"
           (cdkDropListDropped)="drop($event)">
-          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+          <div class="word-box" *ngFor="let item of selectedWordsList[4]" cdkDrag><div class="item">{{item}}</div></div>
         </div>
       </div>
     </div>
     <div class="image-block">
       <div class="image-block__top">
-        <img src="assets/img/img1.png" alt="image" style="width: 100%" class="image-block__img">
+        <img src="assets/img/img6.png" alt="image" style="width: 100%" class="image-block__img">
       </div>
 
       <div
@@ -128,18 +128,21 @@
           #selectedWords="cdkDropList"
           cdkDropList
           cdkDropListOrientation="horizontal"
-          [cdkDropListData]="selectedWordsList"
+          [cdkDropListData]="selectedWordsList[5]"
           [cdkDropListConnectedTo]="unselectedWords"
           [cdkDropListDisabled]="disabled"
           [style]="disabled ? 'margin-bottom: 0;' : ''"
           class="word-list list-selected"
           (cdkDropListDropped)="drop($event)">
-          <div class="word-box" *ngFor="let item of selectedWordsList" cdkDrag>{{item}}</div>
+          <div class="word-box" *ngFor="let item of selectedWordsList[5]" cdkDrag><div class="item">{{item}}</div></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="example-container" [style.display]="disabled ? 'none': 'block'">
+  <div>
+
+  </div>
+  <div class="words-container" [style.display]="disabled ? 'none': 'block'">
     <div
       #unselectedWords="cdkDropList"
       cdkDropList
@@ -148,7 +151,7 @@
       [cdkDropListConnectedTo]="selectedWords"
       class="word-list list-unselected"
       (cdkDropListDropped)="drop($event)">
-      <div class="word-box" *ngFor="let item of wordsList" cdkDrag>{{item}}</div>
+      <div class="word-box" *ngFor="let item of wordsList" cdkDrag><div class="item">{{item}}</div></div>
     </div>
   </div>
 </div>

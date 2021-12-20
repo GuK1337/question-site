@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -1rem;
+    margin-bottom: 1rem;
   }
   .image-block{
     border-radius: 7px;
@@ -25,36 +25,21 @@
   }
 }
 .word-list {
-  width: max-content;
   border: solid 1px #ccc;
-  min-height: 45px;
   display: flex;
   flex-direction: row;
-  background: white;
-  border-radius: 4px;
   overflow: hidden;
-  gap: 0.5rem;
-  padding: 0.5rem;
   border-radius: 7px;
-  width: 100%;
 }
 
 .word-box {
-  padding: 0.5rem 1rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow:  1px 2px 5px 0px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  cursor: move;
-  font-size: 14px;
-  white-space: nowrap;
+  padding:0.5rem 1rem;
+
 }
 
-.cdk-drag-preview {
+
+
+.cdk-drag-preview item{
   box-sizing: border-box;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2),
   0 3px 6px 1px rgba(0, 0, 0, 0.14),
@@ -75,9 +60,44 @@
 
 .list-selected{
   margin-bottom: 1rem;
+  border-radius: 7px;
+  min-height: 55px;
+  width: 100%;
 }
 
 .list-unselected{
   border: 0;
+  flex-wrap: wrap;
+}
+
+.list-unselected .word-box{
+  width: 20%;
+}
+
+.list-selected .word-box{
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.words-container{
+  border: 0;
   background-color: lighten(#673ab7, 50%);
+  border-radius: 7px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.item{
+  padding: 0 1rem;
+  height: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow:  1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  font-size: 14px;
+  white-space: nowrap;
 }
