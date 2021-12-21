@@ -78,6 +78,29 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       flex: 1;
     }
   }
+  &__insert{
+    img{
+      width: 200px;
+    }
+    .text-block{
+      display: flex;
+      gap: 10px;
+      margin-top: 1rem;
+      width: 100%;
+      align-items: center;
+    }
+  }
+  &__img-block{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  &__img{
+    img{
+      width: 100%;
+    }
+  }
 
 }
 
@@ -102,5 +125,34 @@ button{
   transform: translateX(-50%) !important;
   margin-top: 2rem !important;
 }
+.mat-form-field-wrapper{
+  padding: 0!important;
+  .mat-form-field-flex{
+    padding-top: 0!important;
+    .mat-form-field-infix{
+      border: 0!important;
+      padding-top: 0.75rem!important;
+    }
+  }
+  .mat-form-field-underline{
+    bottom: 0;
+  }
+}
+
+.answer-input{
+  width: 70%;
+
+}
+
+.insert_word_input{
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 2rem!important;
+  font-weight: bold!important;
+  text-align: center;
+}
+
 
 

@@ -1,0 +1,178 @@
+<div class="question-container">
+  <div class="question">
+    <div class="question-number">
+      1
+    </div>
+    <div class="question-title">
+      Давай узнаем немного больше об этом празднике.
+    </div>
+    <div class="question-answer">
+      <div class="text">
+        <p>
+          No one <span class="empty-word-number">1</span><span class="empty-word-free-space" *ngIf="!emptyField[0]"></span><span class="empty-word">{{emptyField[0]}}</span> for sure who decorated the first Christmas tree. The <span class="empty-word-number">2</span><span class="empty-word-free-space" *ngIf="!emptyField[1]"></span><span class="empty-word">{{emptyField[1]}}</span> of bringing an evergreen tree indoors and <span class="empty-word-number">3</span><span class="empty-word-free-space" *ngIf="!emptyField[2]"></span><span class="empty-word">{{emptyField[2]}}</span> it at Christmas started in Germany. One <span class="empty-word-number">4</span><span class="empty-word-free-space" *ngIf="!emptyField[3]"></span><span class="empty-word">{{emptyField[3]}}</span> says that Martin Luther started the practice. Luther was an important Christian <span class="empty-word-number">5</span><span class="empty-word-free-space" *ngIf="!emptyField[4]"></span><span class="empty-word">{{emptyField[4]}}</span> . According to the story, he noticed the starlit sky as he walked home one Christmas Eve about the year 1513.He thought the stars looked as if they were shining on the branches. When he arrived home, Martin Luther placed a small fir tree <span class="empty-word-number">7</span><span class="empty-word-free-space" *ngIf="!emptyField[6]"></span><span class="empty-word">{{emptyField[6]}}</span> his house. He decorated it with lighted candles.
+        </p>
+        <p>
+          Decorating Christmas trees became <span class="empty-word-number">7</span><span class="empty-word-free-space" *ngIf="!emptyField[6]"></span><span class="empty-word">{{emptyField[6]}}</span> in Germany. Prince Albert of Sachsen-Coburg-Gotha, the German husband of Queen Victoria, took the tradition to England. Both German and English people brought it to America. And now nearly every family in Great Britain and the USA has a <span class="empty-word-number">8</span><span class="empty-word-free-space" *ngIf="!emptyField[7]"></span><span class="empty-word">{{emptyField[7]}}</span> tree.
+        </p>
+        <p>
+          The biggest Christmas tree in Britain is put up in Trafalgar Square in <span class="empty-word-number">9</span><span class="empty-word-free-space" *ngIf="!emptyField[8]"></span><span class="empty-word">{{emptyField[8]}}</span> .
+        </p>
+        <p>
+          The people of Norway still give this tree every year to the <span class="empty-word-number">10</span><span class="empty-word-free-space" *ngIf="!emptyField[9]"></span><span class="empty-word">{{emptyField[9]}}</span> to thank them for helping Norway against Hitler in the second World War.
+        </p>
+      </div>
+    </div>
+    <div class="choose">
+      <h2>Choose the right answer:</h2>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          1.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 0)">
+          <mat-button-toggle value="knows">knows</mat-button-toggle>
+          <mat-button-toggle value="begins">begins</mat-button-toggle>
+          <mat-button-toggle value="decides">decides</mat-button-toggle>
+          <mat-button-toggle value="is">is</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          2.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 1)">
+          <mat-button-toggle value="tree">tree</mat-button-toggle>
+          <mat-button-toggle value="legend">legend</mat-button-toggle>
+          <mat-button-toggle value="story">story</mat-button-toggle>
+          <mat-button-toggle value="custom">custom</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          3.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 2)">
+          <mat-button-toggle value="showing">showing</mat-button-toggle>
+          <mat-button-toggle value="giving">giving</mat-button-toggle>
+          <mat-button-toggle value="putting">putting</mat-button-toggle>
+          <mat-button-toggle value="decorating">decorating</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          4.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 3)">
+          <mat-button-toggle value="story">story</mat-button-toggle>
+          <mat-button-toggle value="legend">legend</mat-button-toggle>
+          <mat-button-toggle value="fairy">fairy</mat-button-toggle>
+          <mat-button-toggle value="novel">novel</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          5.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 4)">
+          <mat-button-toggle value="man">man</mat-button-toggle>
+          <mat-button-toggle value="saint">saint</mat-button-toggle>
+          <mat-button-toggle value="leader">leader</mat-button-toggle>
+          <mat-button-toggle value="woman">woman</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          6.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 5)">
+          <mat-button-toggle value="inside">inside</mat-button-toggle>
+          <mat-button-toggle value="outside">outside</mat-button-toggle>
+          <mat-button-toggle value="upside">upside</mat-button-toggle>
+          <mat-button-toggle value="offside">offside</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          7.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 6)">
+          <mat-button-toggle value="comfortable">comfortable</mat-button-toggle>
+          <mat-button-toggle value="beautiful">beautiful</mat-button-toggle>
+          <mat-button-toggle value="public">public</mat-button-toggle>
+          <mat-button-toggle value="popular">popular</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          8.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 7)">
+          <mat-button-toggle value="Christmas">Christmas</mat-button-toggle>
+          <mat-button-toggle value="fir">fir</mat-button-toggle>
+          <mat-button-toggle value="pine">pine</mat-button-toggle>
+          <mat-button-toggle value="birch">birch</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          9.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 8)">
+          <mat-button-toggle value="London">London</mat-button-toggle>
+          <mat-button-toggle value="Paris">Paris</mat-button-toggle>
+          <mat-button-toggle value="Moscow">Moscow</mat-button-toggle>
+          <mat-button-toggle value="Madrid">Madrid</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="choose-answ">
+        <span class="choose-answ__num">
+          10.
+        </span>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" (change)="changeWord($event, 9)">
+          <mat-button-toggle value="French people">French people</mat-button-toggle>
+          <mat-button-toggle value="British people">British people</mat-button-toggle>
+          <mat-button-toggle value="Irish people">Irish people</mat-button-toggle>
+          <mat-button-toggle value="Russian people">Russian people</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+
+    <div class="answers">
+      <h2>Answer the questions:</h2>
+      <div class="question-answer">
+        <div class="question-answer__form-sentence ">
+          <div>
+            Where was started the tradition of decorating Christmas tree?
+          </div>
+          <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+            <input matInput placeholder="Enter a sentence">
+          </mat-form-field>
+        </div>
+        <div class="question-answer__form-sentence ">
+          <div>
+            Who started this tradition?
+          </div>
+          <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+            <input matInput placeholder="Enter a sentence">
+          </mat-form-field>
+        </div>
+        <div class="question-answer__form-sentence ">
+          <div>
+            Who brought it to Britain?
+          </div>
+          <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+            <input matInput placeholder="Enter a sentence">
+          </mat-form-field>
+        </div>
+        <div class="question-answer__form-sentence ">
+          <div>
+            Why do people of Norway still present a tree to Britain?
+          </div>
+          <mat-form-field appearance="fill" floatLabel="auto" class="answer-input">
+            <input matInput placeholder="Enter a sentence">
+          </mat-form-field>
+        </div>
+      </div>
+  </div>
+  </div>
+  <button mat-raised-button color="primary" class="submit-btn" >Проверить ответы</button>
+</div>

@@ -6,13 +6,111 @@
     <div class="question-title">
       Давай попробуем соединить слова вместе с картинкой!
     </div>
-    <div class="question-example">
-
-    </div>
     <div class="question-answer">
      <app-select-image [wordsList]="['Presents', 'Christmas tree', 'Snowflake', 'Ball', 'Bow', 'Santa Claus', 'Snowman', 'Reindeer', 'Stocking']"></app-select-image>
     </div>
 
   </div>
   <mat-divider></mat-divider>
+  <div class="question">
+    <div class="question-number">
+     2
+    </div>
+    <div class="question-title">
+      Используя картинку, помоги Санте составить предложения!
+    </div>
+    <div class="question-example">
+      <div class="question-answer__insert">
+        <img src="assets/img/img8.png" alt="img8">
+        <div class="text-block">
+          Example: Do you like
+          <mat-form-field appearance="fill" floatLabel="auto" class="insert_word_input">
+            <input matInput placeholder="Enter a word">
+          </mat-form-field> outside?
+        </div>
+      </div>
+    </div>
+    <div class="question-answer">
+      <div class="question-answer__insert">
+        <div class="question-answer__img-block">
+          <span>1.</span>
+          <img src="assets/img/img5.png" alt="img5">
+        </div>
+        <div class="text-block">
+          Do you have
+          <mat-form-field appearance="fill" floatLabel="auto" class="insert_word_input">
+            <input matInput placeholder="Enter a word">
+          </mat-form-field> under the Christmas tree?
+        </div>
+      </div>
+      <div class="question-answer__insert">
+        <div class="question-answer__img-block">
+          <span>2.</span>
+          <img src="assets/img/img7.png" alt="img7">
+        </div>
+        <div class="text-block">
+          Does she like this
+          <mat-form-field appearance="fill" floatLabel="auto" class="insert_word_input">
+            <input matInput placeholder="Enter a word">
+          </mat-form-field> ?
+        </div>
+      </div>
+      <div class="question-answer__insert">
+        <div class="question-answer__img-block">
+          <span>3.</span>
+          <img src="assets/img/img4.png" alt="img4">
+        </div>
+        <div class="text-block">
+          Do you have a
+          <mat-form-field appearance="fill" floatLabel="auto" class="insert_word_input">
+            <input matInput placeholder="Enter a word">
+          </mat-form-field> on your Christmas tree?
+        </div>
+      </div>
+      <div class="question-answer__insert">
+        <div class="question-answer__img-block">
+          <span>4.</span>
+          <img src="assets/img/img1.png" alt="img1">
+        </div>
+        <div class="text-block">
+          Do you like red
+          <mat-form-field appearance="fill" floatLabel="auto" class="insert_word_input">
+            <input matInput placeholder="Enter a word">
+          </mat-form-field> ?
+        </div>
+      </div>
+      <div class="question-answer__insert">
+        <div class="question-answer__img-block">
+          <span>5.</span>
+          <img src="assets/img/img9.png" alt="img9">
+        </div>
+        <div class="text-block">
+          Do you like your
+          <mat-form-field appearance="fill" floatLabel="auto" class="insert_word_input">
+            <input matInput placeholder="Enter a word">
+          </mat-form-field> near the house?
+        </div>
+      </div>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="question">
+    <div class="question-number">
+     3
+    </div>
+    <div class="question-title">
+      Давай поможем Санте найти новые слова и придать им цвет, затем вместе опишем картинку.
+    </div>
+    <div class="question-example">
+      <div>
+        Example: We can see a green Christmas tree near the snowman
+      </div>
+    </div>
+    <div class="question-answer">
+      <div class="question-answer__img">
+        <img src="assets/img/img10.png" alt="img10">
+      </div>
+    </div>
+  </div>
+  <button mat-raised-button color="primary" class="submit-btn" >Проверить ответы</button>
 </div>

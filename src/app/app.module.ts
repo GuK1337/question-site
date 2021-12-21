@@ -20,6 +20,9 @@ import { SelectWordsComponent } from './components/select-words/select-words.com
 import {CorrectAnswerService} from "./services/correct-answer.service";
 import { SelectImageComponent } from './components/select-image/select-image.component';
 import { SecondTabComponent } from './tabs/second-tab/second-tab.component';
+import { ThirdTabComponent } from './tabs/third-tab/third-tab.component';
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { FourthTabComponent } from './tabs/fourth-tab/fourth-tab.component';
 
 const routes: Routes = [
   {
@@ -47,6 +50,14 @@ const routes: Routes = [
       {
         path: 'wordstock',
         component: SecondTabComponent
+      },
+      {
+        path: 'reading',
+        component: ThirdTabComponent
+      },
+      {
+        path: 'project',
+        component: FourthTabComponent
       }
     ]
   },
@@ -68,6 +79,8 @@ const routes: Routes = [
     SelectWordsComponent,
     SelectImageComponent,
     SecondTabComponent,
+    ThirdTabComponent,
+    FourthTabComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -80,7 +93,8 @@ const routes: Routes = [
     MatInputModule,
     MatDividerModule,
     MatIconModule,
-    DragDropModule
+    DragDropModule,
+    MatButtonToggleModule
 
   ],
   providers: [
